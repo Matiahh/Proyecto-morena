@@ -11,16 +11,55 @@ body {
     scroll-behavior: smooth;
 }
   
-  .container {
+  .container-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #0e273f;
-    color: #fff;
+    flex-wrap: wrap;
   }
 
-  .container a{
+  footer{
+    background-color: #0e273f;
+    color: white;
+    padding: 20px 0;
+  }
+
+  .social{
+    flex: 1;
+    text-align: right;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nuestra-info{
+    flex: 1;
+    text-align: left;
+  }
+
+  .social h6{
+    margin-bottom: 10px;
+  }
+
+  .social a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+  color: #ddd;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+  .container-footer a{
     text-decoration: none;
     color: white;
   }
@@ -49,9 +88,14 @@ body {
 
 header .container {
     background-color: rgb(255, 217, 0);
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.container a{
+  color: white;
 }
 
 header .logo {
@@ -95,6 +139,7 @@ header .logo {
   
   section {
     margin-bottom: 20px;
+    scroll-margin-top: 68px;
 }
  
 .menu-section {
@@ -117,4 +162,27 @@ header .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-wsp{
+  width: 40px;
+  height: 40px;
 }
