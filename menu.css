@@ -121,62 +121,62 @@ header .logo {
 }
 
 .container-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  flex-wrap: wrap;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
 
-footer{
-  background-color: #0e273f;
-  color: white;
-  padding: 20px 0;
-}
+  footer{
+    background-color: #0e273f;
+    color: white;
+    padding: 20px 0;
+  }
 
-.social{
-  flex: 1;
-  text-align: right;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+  .social{
+    flex: 1;
+    text-align: right;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-.nuestra-info{
-  flex: 1;
-  text-align: left;
-}
+  .nuestra-info{
+    flex: 1;
+    text-align: left;
+  }
 
-.social h6{
-  margin-bottom: 10px;
-}
+  .social h6{
+    margin-bottom: 10px;
+  }
 
-.social a {
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
-  transition: color 0.3s;
+  .social a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .social a:hover {
-color: #ddd;
+  color: #ddd;
 }
 
 footer p {
-width: 100%;
-text-align: center;
-margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.container-footer a{
-  text-decoration: none;
-  color: white;
-}
-
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
+  .container-footer a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
 
 .whatsapp-float {
   position: fixed;
