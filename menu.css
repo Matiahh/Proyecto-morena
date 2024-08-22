@@ -173,30 +173,4 @@ footer p {
     color: white;
   }
   
-  .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
 
-.whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#logo-wsp{
-  width: 40px;
-  height: 40px;
-}
