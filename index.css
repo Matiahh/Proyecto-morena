@@ -94,7 +94,7 @@ header a:hover{
        0deg,
        rgba(0,0,0,0.5),
        rgba(0,0,0,0.5) 
-    ),url("");
+    ),url("Images/EmpPino.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -132,36 +132,58 @@ header a:hover{
     display: none;
 }
 
-#nuestros-programas .carta{
+#platos-destacados .carta{
     background-size: cover;
     background-position: center center;
     padding: 50px;
     margin: 30px;
     border-radius: 15px;
+    position: relative;
+    color: white;
+    overflow: hidden;
 }
 
-.carta :first-child{
+#platos-destacados .carta:first-child {
     background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5) 
-     ),url("");
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ), url("Images/empQueso.jpg");
 }
 
-.carta:nth-child(2){
+#platos-destacados .carta:nth-child(2) {
     background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5) 
-     ),url("");
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ), url("Images/empVeggie.png");
 }
 
-.carta:nth-child(3){
+#platos-destacados .carta:nth-child(3) {
     background-image: linear-gradient(
-       0deg,
-       rgba(0,0,0,0.5),
-       rgba(0,0,0,0.5) 
-    ),url("");
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ), url("Images/empMarisc.png");
+}
+
+#platos-destacados .carta h3 {
+    font-size: 2,5em;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#platos-destacados .carta button {
+    background-color: #FF1493;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+#platos-destacados .carta button:hover {
+    background-color: #c71376;
 }
 
 #caracteristicas .container{
@@ -271,4 +293,109 @@ footer p {
 #logo-wsp{
   width: 40px;
   height: 40px;
+}
+
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+    #quienes-somos .container{
+        display: flex;
+        justify-content: space-evenly ;
+    }
+
+    #quienes-somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quienes-somos h2{
+        margin-top: 0px;
+    }
+
+    #quienes-somos .img-container{
+        background-image: url("Images/empQueso.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+    border: 5px punteado;
+    border-radius: 10px;
+    }
+
+    #platos-destacados .destacados{
+        display: flex;
+        justify-content: center;
+    }
+
+    #platos-destacados p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #platos-destacados h3{
+        margin-top: 0;
+    }
+
+
+    #platos-destacados .carta{
+        padding: 15px;
+    }
+
+    #caracteristicas{
+        background-image: url("Images/EmpPino.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .nuestra-info{
+        justify-content: flex-end;
+    }
+
+
+}
+
+@media (min-width:1200px){
+    #caracteristicas{
+        background-position: calc(100vw - 800px);
+    }
 }
