@@ -18,212 +18,312 @@ p{ font-size: 1.25em;}
 ul{ list-style: none;}
 li{font-size: 1.25em;}
   
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #0e273f;
-    color: #fff;
-  }
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
 
-  .container a{
-    text-decoration: none;
-    color: white;
-  }
+nav a {
   
-  .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  nav a {
-    
-    color: #fff;
-    margin-left: 20px;
-    text-decoration: none;
-  }
-  
-  header {
-    background-color: gold;
-    padding: 0 30px; 
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+header {
+  background-color: gold;
+  padding: 0 30px; 
 }
 
 header .logo {
-    margin: 0;
-    padding: 25px 0; 
-    font-weight: bold;
-    color: deeppink;
-    font-size: 1.6em;
-    flex: 1;
-    text-align: center; 
-    padding-bottom: 15px; 
+  margin: 0;
+  padding: 25px 0; 
+  font-weight: bold;
+  color: deeppink;
+  font-size: 1.6em;
+  flex: 1;
+  text-align: center; 
+  padding-bottom: 15px; 
 }
 
 header .container-header {
-    display: flex;
-    justify-content: space-between; 
-    flex-direction: column; 
-        align-items: center;
-    
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: column; 
+  align-items: center;
+  
 }
 
 header .nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
 }
 
 header a {
-    padding: 10px 0;
-    text-decoration: none !important;
-    font-weight: bold;
-    color: black;
+  padding: 10px 0;
+  text-decoration: none !important;
+  font-weight: bold;
+  color: black;
 }
 
 header a:hover {
-    color: fuchsia;
+  color: fuchsia;
 }
   
 #category-navbar {
-    background-color: #0e273f;
-    color: white;
-    overflow-x: auto;
-    white-space: nowrap;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc; 
+  background-color: #0e273f;
+  color: white;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc; 
 }
 
 #category-navbar a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    flex-shrink: 0; 
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  flex-shrink: 0; 
 }
 
 #category-navbar a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #123352;
+  color: black;
 }
 
 .menu-item h3{
   font-size: 1.3em;
 }
 .content {
-    padding: 20px;
+  padding: 20px;
 }
   
 .hidden {
-    display: none;
+  display: none;
 }
   
-  section {
-    margin-bottom: 20px;
-    scroll-margin-top: 60px;
+section {
+  margin-bottom: 20px;
+  scroll-margin-top: 50px;
 }
  
 .menu-section {
-    padding: 2rem;
-    background-color: #b9d4f760;
-    border-bottom: 1px solid #ddd;
+  padding: 2rem;
+  background-color: #b9d4f760;
+  border-bottom: 1px solid #ddd;
 }
 
 .menu-item {
-    display: flex;
-    margin-bottom: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
 }
 
 .menu-item img{
-    max-width: 150px;
-    margin-right: 1rem;
+  max-width: 150px;
+  margin-right: 1rem;
 }
 
 .menu-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  background-color: #0e273f;
+  color: white;
+  padding: 30px 20px;
+  border-top: 5px solid #f1c40f; 
 }
 
 .container-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
 
-  footer{
-    background-color: #0e273f;
-    color: white;
-    padding: 20px 0;
-  }
+.nuestra-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-  .social{
-    flex: 1;
-    text-align: right;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.nuestra-info a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
 
-  .nuestra-info{
-    flex: 1;
-    text-align: left;
-  }
+.nuestra-info a::before {
+  margin-right: 10px;
+}
 
-  .social h6{
-    margin-bottom: 10px;
-  }
+.nuestra-info a i{
+  margin-right: 10px;
+}
 
-  .social a {
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    transition: color 0.3s;
+.social {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social h6 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.social a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .social a:hover {
-  color: #ddd;
+  color: #f1c40f;
+  transform: scale(1.1);
 }
 
 footer p {
   width: 100%;
   text-align: center;
   margin-top: 20px;
+  font-size: 14px;
+  color: #ddd;
 }
 
-  .container-footer a{
-    text-decoration: none;
-    color: white;
+/* Css de los productos */
+
+/* Secciónes */
+#empanadas-clasicas{
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+#empanadas-clasicas h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#empanadas-veggie{
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+#empanadas-veggie h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#empanadas-gourmet {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+#empanadas-gourmet h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#empanadas-mar{
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+#empanadas-mar h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#empanadas-carne{
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+#empanadas-carne h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+
+.menu-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1 1 100%; 
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.menu-info {
+  padding: 20px;
+}
+
+.menu-info h3 {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.menu-info p {
+  font-size: 1.2em;
+  color: #666;
+  margin: 0;
+}
+
+.menu-info .descripcion {
+  display: none; 
+}
+
+@media (min-width: 768px) {
+  .menu-item {
+      flex: 1 1 calc(50% - 20px); 
   }
-
-
-
-@media (min-width: 720px) {
-  header .container-header {
-      flex-direction: row; 
+  .menu-info .descripcion {
+      display: block; 
   }
+}
 
-  header .logo {
-      text-align: left; 
-  }
-
-  header .nav {
-      flex-direction: row; 
-  }
-
-  header a {
-      color: black; 
-      margin-left: 20px; 
-  }
-
-  #category-navbar {
-      justify-content: flex-start; 
-  }
+@media (min-width: 1024px) {
+  .menu-item {
+      flex: 1 1 calc(33.333% - 20px); 
+}
 }
