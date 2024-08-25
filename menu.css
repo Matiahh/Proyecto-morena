@@ -10,6 +10,13 @@ body {
   html{
     scroll-behavior: smooth;
 }
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{font-size: 1.25em;}
   
   .container {
     display: flex;
@@ -39,23 +46,43 @@ body {
   
   header {
     background-color: gold;
-    color:rgb(255, 255, 255);
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    z-index: 1000;
-    transition: top 0.3s; 
-}
-
-header .container {
-    background-color: rgb(255, 217, 0);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 30px; 
 }
 
 header .logo {
-    font-size: 1.5em;
+    margin: 0;
+    padding: 25px 0; 
+    font-weight: bold;
+    color: deeppink;
+    font-size: 1.6em;
+    flex: 1;
+    text-align: center; 
+    padding-bottom: 15px; 
+}
+
+header .container-header {
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column; 
+        align-items: center;
+    
+}
+
+header .nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+header a {
+    padding: 10px 0;
+    text-decoration: none !important;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: fuchsia;
 }
   
 #category-navbar {
@@ -85,6 +112,9 @@ header .logo {
     color: black;
 }
 
+.menu-item h3{
+  font-size: 1.3em;
+}
 .content {
     padding: 20px;
 }
@@ -172,5 +202,28 @@ footer p {
     text-decoration: none;
     color: white;
   }
-  
 
+
+
+@media (min-width: 720px) {
+  header .container-header {
+      flex-direction: row; 
+  }
+
+  header .logo {
+      text-align: left; 
+  }
+
+  header .nav {
+      flex-direction: row; 
+  }
+
+  header a {
+      color: black; 
+      margin-left: 20px; 
+  }
+
+  #category-navbar {
+      justify-content: flex-start; 
+  }
+}
