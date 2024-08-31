@@ -45,29 +45,31 @@ button:hover{
 
 .color-acento{color:deeppink;}
 
+.Logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+  }
+
 header {
     background-color: gold;
     padding: 0 30px; 
 }
 
-header .logo {
-    margin: 0;
-    padding: 25px 0; 
-    font-weight: bold;
-    color: deeppink;
-    font-size: 1.6em;
-    flex: 1;
-    text-align: center; 
-    padding-bottom: 15px; 
-}
-
-header .container {
+header .container-header {
     display: flex;
     justify-content: space-between; 
     flex-direction: column; 
-        align-items: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: gold;
     
-}
+  }
+  
 
 header .nav {
     display: flex;

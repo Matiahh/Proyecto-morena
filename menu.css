@@ -18,9 +18,14 @@ p{ font-size: 1.25em;}
 ul{ list-style: none;}
 li{font-size: 1.25em;}
   
-.logo {
+.Logo {
   font-size: 1.5em;
   font-weight: bold;
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 5px;
 }
 
 nav a {
@@ -28,6 +33,11 @@ nav a {
   color: #fff;
   margin-left: 20px;
   text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #FFD700; 
 }
 
 header {
@@ -35,22 +45,13 @@ header {
   padding: 0 30px; 
 }
 
-header .logo {
-  margin: 0;
-  padding: 25px 0; 
-  font-weight: bold;
-  color: deeppink;
-  font-size: 1.6em;
-  flex: 1;
-  text-align: center; 
-  padding-bottom: 15px; 
-}
-
 header .container-header {
   display: flex;
   justify-content: space-between; 
   flex-direction: column; 
   align-items: center;
+  padding: 10px 20px;
+  background-color: gold;
   
 }
 
