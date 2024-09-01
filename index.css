@@ -89,7 +89,7 @@ header a:hover {
 }
 
 
-#hero{
+#hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,22 +99,45 @@ header a:hover {
     color: aliceblue;
 
     background-image: linear-gradient(
-       0deg,
-       rgba(0,0,0,0.5),
-       rgba(0,0,0,0.5) 
-    ),url("Images/EmpPino.jpg");
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("Images/EmpPino.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-#hero h1{
+#hero h1 {
     color: white;
+    font-size: 6vw; /* Tamaño de fuente responsivo */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra de texto */
 }
 
-#hero button{
+#hero button {
     font-size: 1.75em;
+    padding: 15px 30px;
+    background-color: #FF1493;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
+
+#hero button:hover {
+    background-color: #9c0859;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+#hero button:active {
+    transform: scale(1.05);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 #quienes-somos .container{
     text-align: center;
@@ -191,7 +214,7 @@ header a:hover {
 }
 
 #platos-destacados .carta button:hover {
-    background-color: #c71376;
+    background-color: #9c0859;
 }
 
 #caracteristicas .container{
@@ -203,7 +226,7 @@ header a:hover {
     font-weight: bold;
 }
 
-#final{
+#final {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,93 +237,128 @@ header a:hover {
     height: 80vh;
 }
 
-#final h2{
+#final h2 {
     font-size: 9vw;
+    margin-bottom: 20px;
 }
 
-#final button{
+#final button {
     font-size: 5vw;
+    padding: 15px 30px;
+    background-color: #FF1493;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#final button:hover {
+    background-color: #9c0859;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+#final button:active {
+    transform: scale(1.05);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #0e273f;
+    color: white;
+    padding: 30px 20px;
+    border-top: 5px solid #f1c40f; 
 }
 
 .container-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     flex-wrap: wrap;
-  }
+    gap: 20px; 
+}
 
-  footer{
-    background-color: #0e273f;
-    color: white;
-    padding: 20px 0;
-  }
-
-  .social{
+.nuestra-info {
     flex: 1;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nuestra-info a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.nuestra-info a i {
+    margin-right: 10px;
+}
+
+.social {
+    flex: 1;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-  }
+}
 
-  .nuestra-info{
-    flex: 1;
-    text-align: left;
-  }
-
-  .social h6{
+.social h6 {
     margin-bottom: 10px;
-  }
+    font-size: 18px;
+    letter-spacing: 2px;
+}
 
-  .social a {
+.social a {
     color: white;
     font-size: 24px;
     text-decoration: none;
-    transition: color 0.3s;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .social a:hover {
-  color: #ddd;
+    color: #f1c40f;
+    transform: scale(1.1);
 }
 
 footer p {
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd;
 }
-
-  .container-footer a{
-    text-decoration: none;
-    color: white;
-  }
 
 .logo {
     font-size: 1.5em;
     font-weight: bold;
-  }
-
-.whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-#logo-wsp{
-  width: 40px;
-  height: 40px;
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-wsp {
+    width: 40px;
+    height: 40px;
 }
 
 
