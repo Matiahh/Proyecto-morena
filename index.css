@@ -79,7 +79,7 @@ header .nav {
 
 header a {
     padding: 10px 0;
-    text-decoration: none;
+    text-decoration: none !important;
     font-weight: bold;
     color: black;
 }
