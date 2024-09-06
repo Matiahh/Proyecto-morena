@@ -399,6 +399,16 @@ footer p {
         margin-right: 0;
     }
 
+    #hero {
+        height: 100vh; /* Aumenta la altura de la sección en pantallas pequeñas */
+        padding: 20px; /* Agrega padding para dar más espacio */
+    }
+
+    #hero button {
+        padding: 15px 30px; /* Aumenta el padding del botón */
+        font-size: 1.2em; /* Aumenta el tamaño de fuente del botón */
+    }
+
     #quienes-somos .container{
         display: flex;
         justify-content: space-evenly ;
