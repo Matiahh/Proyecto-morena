@@ -78,7 +78,8 @@ header .nav {
 }
 
 header a {
-    padding: 10px 0;
+    padding: 20px 0;
+    margin: 10px 0;
     text-decoration: none !important;
     font-weight: bold;
     color: black;
@@ -362,6 +363,34 @@ footer p {
 }
 
 
+/* Media query para pantallas menores de 720px */
+@media (max-width: 720px) {
+    header nav {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        padding-right: 10px; 
+        padding-top: 10px; 
+    }
+
+    header a {
+        padding: 10px 20px;
+        margin-right: 15px;
+        text-decoration: none !important;
+        font-weight: bold;
+        color: black;
+    }
+
+    header a:last-child {
+        margin-right: 0; 
+    }
+
+    header a:hover {
+        color: fuchsia; 
+    }
+}
+
+/* Media query para pantallas mayores de 720px */
 @media (min-width: 720px){
 
     header{
@@ -389,6 +418,7 @@ footer p {
     }
 
     header a {
+        margin: 10px 0;
         margin-right: 25px; 
         text-decoration: none;
         font-weight: bold;
@@ -494,3 +524,25 @@ footer p {
         background-position: calc(100vw - 800px);
     }
 }
+
+
+/* Estilos específicos para pantallas más pequeñas como el iPhone SE */
+@media (max-width: 400px) {
+    header {
+      padding: 0 10px;
+    }
+    
+    header .container-header {
+      padding: 5px 10px; /* Aún más pequeño en pantallas muy pequeñas */
+    }
+    
+    header .nav {
+      flex-direction: column;
+      padding: 0;
+    }
+    
+    header a {
+      padding: 10px 0; /* Reducir el padding entre enlaces */
+      font-size: 14px; /* Reducir tamaño de la fuente si es necesario */
+    }
+  }

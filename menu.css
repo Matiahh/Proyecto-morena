@@ -304,3 +304,24 @@ h2 {
     margin-top: -12px;
   }
 }
+
+/* Estilos específicos para pantallas más pequeñas como el iPhone SE */
+@media (max-width: 400px) {
+  header {
+    padding: 0 10px;
+  }
+  
+  header .container-header {
+    padding: 5px 10px; /* Aún más pequeño en pantallas muy pequeñas */
+  }
+  
+  header .nav {
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  header a {
+    padding: 5px 0; /* Reducir el padding entre enlaces */
+    font-size: 14px; /* Reducir tamaño de la fuente si es necesario */
+  }
+}
