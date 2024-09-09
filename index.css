@@ -368,7 +368,6 @@ footer p {
     header nav {
         display: flex;
         flex-direction: row; 
-        flex-wrap: wrap; 
         padding-right: 10px; 
         padding-top: 10px; 
     }
