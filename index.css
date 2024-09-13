@@ -177,21 +177,21 @@ header a:hover {
 
 #platos-destacados .carta:first-child {
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.3), 
         rgba(0, 0, 0, 0.1)
     ), url("Images/empQueso.jpg");
 }
 
 #platos-destacados .carta:nth-child(2) {
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.3), 
         rgba(0, 0, 0, 0.1)
     ), url("Images/empVeggie.png");
 }
 
 #platos-destacados .carta:nth-child(3) {
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.3), 
         rgba(0, 0, 0, 0.2)
     ), url("Images/empMarisc.png");
 }
