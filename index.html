@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -19,12 +20,87 @@
                 <a href="#quienes-somos">Sucursal</a>
                 <a href="#quienes-somos">Quienes Somos</a>
             </nav>
+            <div id="menuModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Carta Fija - Colaciones Diarias</h2>
+                    <p class="highlight">Incluye: Ensalada, pan, jugo o bebida y ají.</p>
+                    <p>Acompañamientos: Arroz, papas doradas, puré, quinoa, pastas, mix de ensaladas.</p>
+                    <p class="highlight">Papitas fritas: +$1.500</p>
+                    <ul>
+                        <li class="menu-item">🥑 Palta reina de pollo - <strong>$5.300</strong></li>
+                        <li class="menu-item">🐟 Palta reina de jurel - <strong>$5.000</strong></li>
+                        <li class="menu-item">🥙 Fajita mechada - <strong>$5.500</strong></li>
+                        <li class="menu-item">🍖 Bife de lomo vetado a lo pobre - <strong>$7.500</strong></li>
+                        <li class="menu-item">🍔 Hamburguesa casera al plato - <strong>$5.300</strong></li>
+                        <li class="menu-item">🌿 Bistec de seitán (vegan) - <strong>$5.000</strong></li>
+                        <li class="menu-item">🥦 Salteado de verduras con tofu (vegan) - <strong>$5.500</strong></strongZ></li>
+                        
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 <!-- Sección principal -->
     <section id="hero">
-        <h1>Nuestras empanadas de siempre son un tesoro nacional</h1>
-        <a href="menu.html"><button>¡DISFRUTA YA!</button></a>
+        <div class="carrousel">
+            <div class="conteCarrousel">
+                <div class="itemCarrousel" id="itemCarrousel-1">
+                    <div class="itemCarrouselTarjeta"> <img src="/Images/Carousel1.jpg" alt=""></div>
+                    <div class="itemCarrouselArrows">
+                        <a href="javascript:void(0);" onclick="moverCarrusel('itemCarrousel-3');">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <div class="infoCarousel">
+                            <h5>Nuestras empanadas de siempre son un tesoro Nacional</h5>
+                            <a href="/menu.html">
+                                <button>¡DISFRUTA YA!</button>
+                            </a>
+                        </div>
+                        <a href="javascript:void(0);" onclick="moverCarrusel('itemCarrousel-2');">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-2">
+                    <div class="itemCarrouselTarjeta"> <img src="/Images/Carousel2.jpg" alt=""></div>
+                    <div class="itemCarrouselArrows">
+                        <a href="javascript:void(0);" onclick="moverCarrusel('itemCarrousel-1');">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <div class="infoCarousel">
+                            <h5>El almuerzo perfecto te espera</h5>
+                            <p>¿Carta fija o del día? ¡Tu decides!</p>
+                            <a href="/menu.html">
+                                <button>¡DESCUBRE EL MENU!</button>
+                            </a>
+                        </div>
+                        <a href="javascript:void(0);" onclick="moverCarrusel('itemCarrousel-3');">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-3">
+                    <div class="itemCarrouselTarjeta"> <img src="/Images/Carousel3.jpg" alt=""></div>
+                    <div class="itemCarrouselArrows">
+                        <a href="javascript:void(0);" onclick="moverCarrusel('itemCarrousel-2');">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <div class="infoCarousel">
+                            <h5>Un clásico en cada mesa</h5>
+                            <p>Prueba nuestras empanadas de cóctel,</p>
+                            <p>pequeñas en tamaño pero grandes en sabor.</p>
+                            <a href="/menu.html#empanadas-coctel">
+                                <button>¡HAZ TU PEDIDO!</button>
+                            </a>
+                        </div>
+                        <a href="javascript:void(0);" onclick="moverCarrusel('itemCarrousel-1');">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -69,19 +145,25 @@
     <!-- Sección relleno de página -->
     <section id="caracteristicas">
         <div class="container">
-            <ul>
-                <li>😍 100% Rico​</li>
-                <li>😍 100% Casero​</li>
-                <li>😍 Para toda la familia!​</li>
-                <li>😍 Ven a Disfrutar​!</li>
-            </ul>
+            <h2>¡Descubre lo que tenemos para ti!</h2>
+            <p>En nuestro menú encontraras lo mejor de la gastronomía<br>¡100% casero y delicioso!</p>
+            <button onclick="openModal()">Ver Carta Fija</button>
+
         </div>
+
     </section>
 
 
     <section id="final">
-        <h2>Listo para pedir ?</h2>
-        <a href="menu.html"><button>Menú Ya!</button></a>
+        <div class="contentt">
+            <div class="textt">
+                <h2>¡Encuentranos Aqui!</h2>
+                <p id="info">Visitanos en nuestra tienda física para encontrar los mejores productos.</p>
+            </div> 
+            <div></div>
+            <h2 id="sorpresa">¡Encuentranos Aqui!</h2>   
+            <div id="map"></div>
+        </div>
     </section>
 
 
@@ -108,5 +190,10 @@
             <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
         </svg>
     </a>
+
+    <script src="index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqDOi6Hsgih19Fg0WDSx3SYyleNoHypoQ&callback=iniciarMap"></script>
+    
+
 </body>
 </html>
