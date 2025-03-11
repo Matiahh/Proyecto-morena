@@ -134,7 +134,8 @@ button:hover{
     height: auto;
     border-radius: 50%;
     object-fit: cover;
-    padding: 5px;
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente */
   }
 
 header {
@@ -176,9 +177,80 @@ header a:hover {
     color: fuchsia;
 }
 
+
 #hero{
     margin-top: 163px;
 }
+=======
+.header-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 5px;  
+}
+
+
+/* Estilo del contenedor del botón */
+.btn-group {
+    position: relative;
+}
+
+/* Estilo del botón principal */
+.btn-group .btn {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 14px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(135deg, gold, #ffdd44) !important;
+    border-radius: none; 
+    box-shadow: 0 4px 8px rgba(218, 165, 32, 0.3);
+    font-weight: bold; 
+    color: black !important; 
+}
+
+/* Efecto hover para el botón */
+.btn-group .btn:hover {
+    background: linear-gradient(135deg, fuchsia, #ff1493) !important;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 20, 147, 0.4);
+}
+
+/* Estilos del menú desplegable */
+.dropdown-menu {
+    background: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(156, 8, 89, 0.2);
+    min-width: 200px;
+    padding: 8px 0;
+}
+
+/* Estilos de los elementos del dropdown */
+.dropdown-menu .dropdown-item {
+    color: #9c0859;
+    font-size: 14px;
+    padding: 12px 16px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Efecto hover para los ítems del menú */
+.dropdown-menu .dropdown-item:hover {
+    background: linear-gradient(135deg, #9c0859, #ff4081);
+    color: #fff7e6;
+    transform: scale(1.05);
+}
+
+/* Línea divisoria entre opciones */
+.dropdown-divider {
+    border-top: 1px solid #d4af37 !important;
+    margin: 8px 0;
+}
+
+>>>>>>> Stashed changes
 
 img{
     width: 100%;
@@ -280,6 +352,7 @@ img{
 .infoCarousel p{
     color: #fff7e6;
 }
+
 
 #quienes-somos .container{
     text-align: center;
