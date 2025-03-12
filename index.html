@@ -7,66 +7,39 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<<<<<<< Updated upstream
     <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
-=======
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
->>>>>>> Stashed changes
-
+    
 </head>
 <body>
 <!-- Header de página -->
     <header>
-<<<<<<< Updated upstream
-        <div class="container-header">
-            <img src="Images/LogoMorena.png" alt="Logo Morena Mia" class="Logo">
-            <nav>
-                <a href="menu.html">Menú</a>
-                <a href="#quienes-somos">Sucursal</a>
-                <a href="#quienes-somos">Quienes Somos</a>
-            </nav>
-            <div id="menuModal" class="modal">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal()">&times;</span>
-                    <h2>Carta Fija - Colaciones Diarias</h2>
-                    <p class="highlight">Incluye: Ensalada, pan, jugo o bebida y ají.</p>
-                    <p>Acompañamientos: Arroz, papas doradas, puré, quinoa, pastas, mix de ensaladas.</p>
-                    <p class="highlight">Papitas fritas: +$1.500</p>
-                    <ul>
-                        <li class="menu-item">🥑 Palta reina de pollo - <strong>$5.300</strong></li>
-                        <li class="menu-item">🐟 Palta reina de jurel - <strong>$5.000</strong></li>
-                        <li class="menu-item">🥙 Fajita mechada - <strong>$5.500</strong></li>
-                        <li class="menu-item">🍖 Bife de lomo vetado a lo pobre - <strong>$7.500</strong></li>
-                        <li class="menu-item">🍔 Hamburguesa casera al plato - <strong>$5.300</strong></li>
-                        <li class="menu-item">🌿 Bistec de seitán (vegan) - <strong>$5.000</strong></li>
-                        <li class="menu-item">🥦 Salteado de verduras con tofu (vegan) - <strong>$5.500</strong></strongZ></li>
-                        
-                    </ul>
+            <img src="Images/LogoMorena.png" alt="Logo Morena Mia" class="Logo"><br>
+            <div class="alert-overlay">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>¡Deberías aprovechar nuestra venta de empanadas al por mayor!</strong> 
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             </div>
-        </div>
-=======
-        <img src="Images/LogoMorena.png" alt="Logo Morena Mia" class="Logo">
-        <div class="header-container">
-            <div class="container-header">
-                <nav>
-                    <a href="#quienes-somos">Quienes Somos</a>
-                </nav>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="visually-hidden">Ver Cartas</span>
-                </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="menu.html">Empanadas</a>
-                <li><a class="dropdown-item" href="#">Carta Diaría</a></li>
-                <li><a class="dropdown-item" href="#">Carta fija</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#quienes-somos">Sucursal</a></li>
-            </ul>
-            </div>
-        </div>  
->>>>>>> Stashed changes
+            <div class="header-container">
+                <div class="container-header">
+                    <nav>
+                        <a href="#quienes-somos">Quienes Somos</a>
+                    </nav>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Almuerzos</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="menu.html">Empanadas</a>
+                        <li><a class="dropdown-item" href="#">Carta Diaría</a></li>
+                        <li><a class="dropdown-item" href="#">Carta fija</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#final">Sucursal</a></li>
+                    </ul>
+                </div>
+            </div>  
     </header>
 <!-- Sección principal -->
     <section id="hero">
@@ -171,6 +144,25 @@
 
     <!-- Sección relleno de página -->
     <section id="caracteristicas">
+        <div id="menuModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Carta Fija - Colaciones Diarias</h2>
+                <p class="highlight">Incluye: Ensalada, pan, jugo o bebida y ají.</p>
+                <p>Acompañamientos: Arroz, papas doradas, puré, quinoa, pastas, mix de ensaladas.</p>
+                <p class="highlight">Papitas fritas: +$1.500</p>
+                <ul>
+                    <li class="menu-item">🥑 Palta reina de pollo - <strong>$5.300</strong></li>
+                    <li class="menu-item">🐟 Palta reina de jurel - <strong>$5.000</strong></li>
+                    <li class="menu-item">🥙 Fajita mechada - <strong>$5.500</strong></li>
+                    <li class="menu-item">🍖 Bife de lomo vetado a lo pobre - <strong>$7.500</strong></li>
+                    <li class="menu-item">🍔 Hamburguesa casera al plato - <strong>$5.300</strong></li>
+                    <li class="menu-item">🌿 Bistec de seitán (vegan) - <strong>$5.000</strong></li>
+                    <li class="menu-item">🥦 Salteado de verduras con tofu (vegan) - <strong>$5.500</strong></strongZ></li>
+                    
+                </ul>
+            </div>
+        </div>
         <div class="container">
             <h2>¡Descubre lo que tenemos para ti!</h2>
             <p>En nuestro menú encontraras lo mejor de la gastronomía<br>¡100% casero y delicioso!</p>
