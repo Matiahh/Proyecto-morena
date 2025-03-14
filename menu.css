@@ -81,8 +81,9 @@ header a:hover {
   top: 0;
   z-index: 999;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Centra los elementos */
   border-bottom: 1px solid #ccc; 
+  padding: 10px 0; /
 }
 
 #category-navbar a {
@@ -97,6 +98,17 @@ header a:hover {
 #category-navbar a:hover {
   background-color: gold;
   color: black;
+}
+
+@media (min-width: 768px) { /* Aplicará estos estilos en tablets y pantallas grandes */
+  #category-navbar {
+    justify-content: center; /* Centra los enlaces */
+    gap: 50px; /* Añade espacio entre ellos */
+  }
+  
+  #category-navbar a {
+    font-size: 1.2rem; /* Hace los enlaces más grandes */
+  }
 }
 
 .menu-item h3{
@@ -124,6 +136,11 @@ section {
 
 section h2{
   scroll-margin-top: 65px;
+  padding: 20px;
+}
+
+#nombre-plato{
+  margin-top: 10px;
 }
 
 .menu-item {
@@ -275,39 +292,47 @@ h2 {
   color: #666;
   margin: 0;
 }
-@media (min-width: 768px){
-  h2{
-    font-size: 2.5em;
+@media (max-width: 768px) {
+  .menu-item {
+    flex-direction: row !important; /* Asegurar que los elementos estén en fila */
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 20px;
   }
 
-  .menu-item h3{
-    font-size: 1.3em;
+  .menu-item h3 {
+    width: 70% !important; /* Reducimos el ancho del título */
+    text-align: left !important;
   }
 
-  .menu-item .price{
-    font-size: 1.5em;
+  .menu-info p {
+
+    display: none; /* Agrega "..." si es muy largo */
   }
 
-  .container{
-    max-width: 1200px;
+  p {
+    display: none;
   }
 
-  .order-button{
-    width: 30px;
-    height: 30px;
-    font-size: 24px;
-    margin-left: 20px;
+  .price{
+    display: block;
   }
 
-  .menu-item .price{
-    line-height: 50px;
+  .menu-item .price {
+    font-size: 1em !important;
+    text-align: left !important;
+    width: auto !important;
+    margin-top: 0 !important;
   }
-  .menu-item a{
-    line-height: 1;
-    padding: 0;
-    margin-top: -12px;
+
+  .menu-item a {
+    width: auto !important;
+    text-align: right !important;
+    margin-left: auto !important; /* Empuja el botón a la derecha */
   }
 }
+
+
 
 /* Estilos específicos para pantallas más pequeñas como el iPhone SE */
 @media (max-width: 400px) {

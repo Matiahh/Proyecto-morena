@@ -64,3 +64,18 @@ alertOverlay.addEventListener('click', function(event) {
         closeAlert(); // Cerrar la alerta si el clic es fuera de la alerta
     }
 });
+
+document.querySelectorAll('a[href^="#quienes-somos"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        let target = document.querySelector(this.getAttribute("href"));
+        let offset = 150; // Ajusta la distancia del desplazamiento
+
+        if (target) {
+            window.scrollTo({
+                top: target.offsetTop - offset,
+                behavior: "smooth"
+            });
+        }
+    });
+});
