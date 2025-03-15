@@ -590,7 +590,7 @@ img{
 }
 
 .modal-content {
-    background: url('/Images/delicious-goulash-ready-dinner.jpg') no-repeat center center;
+    background: url('Images/delicious-goulash-ready-dinner.jpg') no-repeat center center;
     background-size: cover;
     padding: 20px;
     margin: 10% auto;
@@ -895,7 +895,7 @@ footer p {
     }
 
     #caracteristicas{
-        background-image: url("/Images/delicious-goulash-ready-dinner\ \(1\).jpg");
+        background-image: url("Images/delicious-goulash-ready-dinner-1.jpg");
         align-items:center;
         display:flex;
         justify-content: space-between;
