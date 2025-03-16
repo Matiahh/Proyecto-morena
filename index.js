@@ -65,17 +65,19 @@ alertOverlay.addEventListener('click', function(event) {
     }
 });
 
-document.querySelectorAll('a[href^="#quienes-somos"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        let target = document.querySelector(this.getAttribute("href"));
-        let offset = 150; // Ajusta la distancia del desplazamiento
+//
+//document.querySelectorAll('a[href^="#quienes-somos"]').forEach(anchor => {
+    //anchor.addEventListener("click", function (e) {
+        //e.preventDefault();
+        //let target = document.querySelector(this.getAttribute("href"));
+        //let offset = 150; // Ajusta la distancia del desplazamiento
 
-        if (target) {
-            window.scrollTo({
-                top: target.offsetTop - offset,
-                behavior: "smooth"
-            });
-        }
-    });
-});
+        //if (target) {
+            //window.scrollTo({
+          //      top: target.offsetTop - offset,
+        //        behavior: "smooth"
+      //      });
+    //    }
+  //  });
+//});
+//

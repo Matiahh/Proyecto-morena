@@ -132,6 +132,10 @@ header a:hover {
     z-index: 9998; /* Fondo debajo de la alerta */
 }
 
+.alert-overlay strong{
+    font-size: 3.5rem;
+}
+
 /* Estilo de la alerta */
 .alert {
     filter: brightness(1);
@@ -154,7 +158,7 @@ header a:hover {
     height: 400px; /* Mayor altura */
     position: relative; /* Para que el botón de cierre se posicione dentro de la alerta */
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra más sutil */
-    color: goldenrod !important;
+    color: rgb(180, 86, 8) !important;
 }
 
 /* Capa oscura sobre la imagen para mejorar visibilidad del texto */
@@ -328,14 +332,14 @@ img{
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
+    margin-left: 1px;
     right: 0;
     height: 100%;
     width: 100%; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px; 
+    padding: 30px; 
 }
 
 .itemCarrouselArrows > i:hover {
@@ -407,6 +411,19 @@ img{
         font-size: 1.2rem;
         padding: 10px 20px;
     }
+
+    #quienes-somos{
+        scroll-margin-top: 2    0px !important;
+    }
+
+    .modal-content::before{
+        height: 200% !important;
+    }
+
+    .alert-overlay strong{
+        font-size: 1.5em;
+        margin-right: -50px;
+    }
 }
 
 /* 📺 Para pantallas menores a 480px (móviles pequeños) */
@@ -431,6 +448,14 @@ img{
 
     .itemCarrouselArrows > a > i {
         font-size: 1.3rem;
+    }
+
+    #quienes-somos{
+        scroll-margin-top: 10px !important;
+    }
+
+    .modal-content::before{
+        height: 450%;
     }
 }
 
@@ -619,7 +644,7 @@ img{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    
     background: rgba(0, 0, 0, 0.7); /* Ajusta la opacidad del overlay */
     border-radius: 10px;
     z-index: -1;
@@ -788,6 +813,12 @@ footer p {
     header a:hover {
         color: fuchsia; 
     }
+
+    #quienes-somos{
+        scroll-margin-top: 160px;
+    }
+
+
 }
 
 /* Media query para pantallas mayores de 720px */
@@ -831,7 +862,7 @@ footer p {
 
     #hero {
         height: 100vh; /* Aumenta la altura de la sección en pantallas pequeñas */
-        padding: 20px; /* Agrega padding para dar más espacio */
+        padding: 7px; /* Agrega padding para dar más espacio */
     }
 
     #hero button {
@@ -839,11 +870,14 @@ footer p {
         font-size: 1.2em; /* Aumenta el tamaño de fuente del botón */
     }
 
+    #quienes-somos{
+        scroll-margin-top: 30px;
+    }
+
 
     #quienes-somos .container{
         display: flex;
         justify-content: space-evenly ;
-
 
     }
 
@@ -915,10 +949,6 @@ footer p {
         margin-left: 100px;
     }
 
-    #final h2{
-        font-size: 5em;
-    }
-
     #final button{
         font-size: 2em;
     }
@@ -927,7 +957,30 @@ footer p {
         justify-content: flex-end;
     }
 
+    .itemCarrouselArrows{
+        margin-left: 10px;
+    }
 
+    #map {
+        width: 340px; /* Ajustar el mapa al 100% del ancho */
+        height: 240px; /* Reducir la altura del mapa en dispositivos móviles */
+        left: 0;
+        margin-right: -80px;
+        margin-left: -250px;
+    }
+
+    #final h2{
+        font-size: 3.5em;
+    }
+
+    #final {
+        scroll-margin-top: 120px;
+    }
+
+    .modal-content::before{
+        height: 167%;
+    }
+    
 }
 
 #final {
@@ -1036,6 +1089,10 @@ footer p {
     .modal-content {
         max-width: 600px;
     }
+
+    #quienes-somos{
+        scroll-margin-top: 80px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -1044,6 +1101,10 @@ footer p {
     }
     .menu-item {
         font-size: 18px;
+    }
+
+    .modal-content::before{
+        height: 135%;
     }
 }
 
