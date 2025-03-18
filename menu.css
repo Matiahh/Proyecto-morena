@@ -100,6 +100,99 @@ header a:hover {
   color: black;
 }
 
+/* Estilo del Pop-up */
+.popup {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro */
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  display: flex; /* Para centrar el contenido */
+}
+
+/* Contenido del Pop-up */
+.popup-content {
+  position: relative;
+  background-image: url('Images/empQueso.jpg'); /* Imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra el contenido */
+  background-position: center;
+  width: 90%; /* Ajustar el ancho */
+  max-width: 800px; /* Ancho máximo */
+  height: 400px; /* Mayor altura */
+  padding: 40px 60px;
+  border-radius: 20px; /* Bordes redondeados */
+  font-size: 1.6rem; /* Tamaño del texto */
+  font-weight: bold;
+  display: flex;
+  flex-direction: column; /* Cambiado a columna para alinear el contenido uno sobre otro */
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  align-items: center; /* Centrar el contenido verticalmente */
+  text-align: center;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+  color: rgb(180, 86, 8); /* Color de texto */
+  position: relative;
+}
+
+/* Capa oscura sobre la imagen para mejorar visibilidad del texto */
+.popup-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Capa más oscura */
+  border-radius: 20px; /* Bordes redondeados */
+  z-index: -1; /* Coloca la capa debajo del contenido */
+}
+
+/* Estilo del texto (título y párrafo) */
+.popup-content h2 {
+  font-size: 2.4rem; /* Aumentar tamaño del título */
+  color: goldenrod; /* Color dorado para el título */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para hacer que el texto se lea mejor */
+}
+
+.popup-content p {
+  font-size: 1.4rem; /* Tamaño del párrafo */
+  margin-bottom: 30px;
+  color: white; /* Color blanco para el texto */
+}
+
+/* Estilo del botón de encargo */
+.order-button-pop {
+  background-color: rgba(255, 165, 0, 0.8); /* Color naranja suave */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transición de transformación */
+}
+
+/* Efecto al pasar el ratón (hover) */
+.order-button-pop:hover {
+  background-color: rgba(255, 140, 0, 0.9); /* Efecto hover para el botón */
+  transform: scale(1.1); /* Aumenta el tamaño del botón */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más prominente */
+}
+
+/* Asegurarse de que no haya subrayado azul ni enfoque por defecto */
+.order-button-pop:focus,
+.order-button-pop:active {
+    outline: none; /* Elimina el borde de enfoque */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Mantén la sombra original */
+}
+
+
+
 @media (min-width: 768px) { /* Aplicará estos estilos en tablets y pantallas grandes */
   #category-navbar {
     justify-content: center; /* Centra los enlaces */
