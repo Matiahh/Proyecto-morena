@@ -416,10 +416,6 @@ img{
         scroll-margin-top: 2    0px !important;
     }
 
-    .modal-content::before{
-        height: 200% !important;
-    }
-
     .alert-overlay strong{
         font-size: 1.5em;
         margin-right: -50px;
@@ -1103,9 +1099,6 @@ footer p {
         font-size: 18px;
     }
 
-    .modal-content::before{
-        height: 135%;
-    }
 }
 
 @keyframes fadeIn {
@@ -1121,4 +1114,45 @@ footer p {
 
 .modal-content {
     animation: fadeIn 0.3s ease-out;
+}
+
+@media (max-width: 1024px) and (orientation: portrait){
+    .itemCarrousel{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        left: 30px;
+        margin-left: 0.1px;
+        margin-right: -20px;
+    }
+
+    .itemCarrouselArrows{
+        padding: 20px !important;
+        left: 15px !important;
+        height: 100%;
+    }
+
+    #hero{
+        padding: 0;
+        width: 102%;
+    }
+
+    #map{
+        width: 400px;
+        height: 300px;
+        margin-right: 650px;
+        margin-left: -240px;
+    }
+
+    #sorpresa{
+        margin-left: 550px !important;
+    }
+
+
+}
+
+@media (max-width: 1366px) and (orientation: landscape){
+    #sorpresa{
+        display: none;
+    }
 }
