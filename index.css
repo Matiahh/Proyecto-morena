@@ -807,6 +807,7 @@ footer p {
     }
 
 
+
 }
 
 
@@ -1132,6 +1133,9 @@ footer p {
     #quienes-somos{
         scroll-margin-top: 80px;
     }
+
+
+
 }
 
 @media (min-width: 1024px) {
@@ -1192,4 +1196,23 @@ footer p {
 
 .modal-content {
     animation: fadeIn 0.3s ease-out;
+}
+
+
+
+@media (max-width: 1280px) {
+    #caracteristicas {
+        background-size: 500px 350px; /* Reduce aún más la imagen */
+        background-position: calc(100vw - 400px) 80px; /* Ajusta la posición */
+    }
+
+    #caracteristicas .container {
+        max-width: 55%; /* Ajusta el ancho del contenido */
+        margin-left: 80px; /* Mueve el contenido más a la izquierda */
+        margin-top: -50px; /* Sube el contenido */
+    }
+
+    #caracteristicas ul {
+        margin-left: 0; /* Asegura que la lista no se desplace demasiado */
+    }
 }
