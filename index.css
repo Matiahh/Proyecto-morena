@@ -1076,6 +1076,8 @@ footer p {
 
     #caracteristicas .container{
         text-align: initial;
+        padding: 0;
+        margin-left: 20px;
     }
 
     #caracteristicas ul{
@@ -1119,10 +1121,7 @@ footer p {
 }
 
 @media (min-width:1200px){
-    #caracteristicas{
-        background-position: calc(100vw - 800px);
-        height: 100vh;
-    }
+
 }
 
 @media (min-width: 768px) {
@@ -1200,19 +1199,68 @@ footer p {
 
 
 
-@media (max-width: 1280px) {
+@media (width: 1280px) {
     #caracteristicas {
         background-size: 500px 350px; /* Reduce aún más la imagen */
-        background-position: calc(100vw - 400px) 80px; /* Ajusta la posición */
+        background-position: calc(85vw - 385px) 65px; /* Ajusta la posición */
+        height: 100vh;
+        margin-top: 50px;
     }
 
     #caracteristicas .container {
         max-width: 55%; /* Ajusta el ancho del contenido */
         margin-left: 80px; /* Mueve el contenido más a la izquierda */
-        margin-top: -50px; /* Sube el contenido */
+        margin-top: 150px; /* Sube el contenido */
     }
 
     #caracteristicas ul {
         margin-left: 0; /* Asegura que la lista no se desplace demasiado */
+    }
+
+    .carta{
+        flex: 1; /* O un ancho fijo como width: 300px */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        min-height: 250px; border: 1px solid #ccc;
+        
+    }
+
+    .carta h3{
+        font-size: 1.3rem;
+    }
+}
+
+@media (width: 1366px) {
+    #caracteristicas {
+        background-size: 500px 350px; /* Reduce aún más la imagen */
+        background-position: calc(85vw - 385px) 65px; /* Ajusta la posición */
+        height: 100vh;
+        margin-top: 50px;
+    }
+
+    #caracteristicas .container {
+        max-width: 55%; /* Ajusta el ancho del contenido */
+        margin-left: 80px; /* Mueve el contenido más a la izquierda */
+        margin-top: 150px; /* Sube el contenido */
+    }
+
+    #caracteristicas ul {
+        margin-left: 0; /* Asegura que la lista no se desplace demasiado */
+    }
+
+    .carta{
+        flex: 1; /* O un ancho fijo como width: 300px */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        min-height: 250px; border: 1px solid #ccc;
+        
+    }
+
+    .carta h3{
+        font-size: 1.3rem;
     }
 }
